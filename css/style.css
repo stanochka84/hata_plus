@@ -92,8 +92,8 @@ a.fb:hover{
 }
 a.tw{
     width: 18px;
-    height: 15px;
-    background-position: -122px 0;
+    height: 16px;
+    background-position: -122px -1px;
 }
 a.tw:hover{
     background-position: -122px -28px;
@@ -170,8 +170,11 @@ a.in:hover{
     font: 16px/1.5em "Arial";
 }
 .contact-info a{
-    display: block;   
+    display: block;    
 }
+header{
+    box-shadow: 0 0 8px;
+    }
 .button a{
     display: inline-block;
     padding: 12px 35px;
@@ -200,13 +203,15 @@ a.in:hover{
     font: 30px "Roboto Slab";
 }
 p.prop-info{
-    margin: 12px 0 16px;
-    font-size: 14px;
-    font-style: normal;
+    margin: 11px 0 15px;
+    line-height: 24px;
+    color: #fff;
+    font: 400 14px "Arial";
+    text-align: center;
 }
 p.prop-price{
     color: #fd8300;
-    font-size: 24;
+    font-size: 24px;
 }
 .prop-price b{
     font-size: 40px;
@@ -246,7 +251,7 @@ figcaption a{
     text-decoration: none;
     color: #1f1f56;
 }
-.figcaption a:hover{
+figure:hover h3{
     text-decoration: underline;
 }
 figcaption p{
@@ -371,12 +376,12 @@ aside{
     text-align: center;
     padding: 18px;
 }
-header hr{
+/* header hr{
     margin: 35px 0;
     border: none;
     border-top: 1px solid #e4e4ec;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
+} */
 .article{   
     color: #666;
     font:14px/1.8em "Arial";
