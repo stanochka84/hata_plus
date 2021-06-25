@@ -109,6 +109,9 @@ a.in:hover{
 .contact-info{
     padding: 30px 0;
 }
+.footer-top{
+    margin-top: 30px;
+}
 .contact-info p,
 .footer-top p{
     margin: 0;
@@ -124,17 +127,27 @@ a.in:hover{
     text-decoration: none;
     color: #25252c;
 }
+.footer-top a{
+    position: relative;
+    text-decoration: none;
+    color: #25252c;
+}
+
 .img{
     width: 220px;
     height: 57px;
     display: inline-block;
 }
 .phone::before,
-.url::before,
 .skype::before{
     position: absolute;
     left: -28px;
     bottom: -3px;
+}
+.url::before{
+    position: absolute;
+    left: -28px;
+    bottom: 0px;
 }
 .phone::before{
     content: url(../img/phone.png); 
@@ -173,7 +186,7 @@ a.in:hover{
     display: block;    
 }
 header{
-    box-shadow: 0 0 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
 .button a{
     display: inline-block;
@@ -376,12 +389,6 @@ aside{
     text-align: center;
     padding: 18px;
 }
-/* header hr{
-    margin: 35px 0;
-    border: none;
-    border-top: 1px solid #e4e4ec;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-} */
 .article{   
     color: #666;
     font:14px/1.8em "Arial";
