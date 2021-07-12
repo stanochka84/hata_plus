@@ -154,9 +154,11 @@ a.in:hover{
 }
 .url::before{
     content: url(../img/email.png); 
-}
+    size: 17px 20px;  
+}  
 .skype::before{
     content: url(../img/skype.png);
+    size: 18px 23px;
 }
 .stick::before{
     content: "";
@@ -165,7 +167,7 @@ a.in:hover{
     right: 237px;
     width: 1px;
     height: 58px;
-    background-color: #b1b1d2;;
+    background-color: #b1b1d2;
 }
 .phone,
 .mail{
@@ -439,3 +441,170 @@ aside{
 .page-content a:hover{
     text-decoration: none;
 }
+.contacts{
+    margin-bottom: 30px;
+}
+.contacts-row{
+    margin: 0 -14px;
+    font-size: 0;
+    text-align: left;
+    
+}
+.office-column{
+    display: inline-block;
+    margin: 10px 14px;
+    vertical-align: middle;
+    width: 300px;
+    font-size: 14px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.contacts h1{
+    line-height: 24px;
+    color: #24242b;
+    font: 700 24px "Roboto Slab";
+}
+.contacts, .connection-row h2{
+    line-height: 24px;
+    color: #24242b;
+    font: 700 14px "Roboto Slab";
+}
+.contacts p{
+    line-height: 21px;
+    color: #666666;
+    font: 14px "Arial";
+}
+.office-phone{
+    line-height: 24px;
+    color: #25252c;
+    font: bold 18px "Arial";
+    text-decoration: none;
+}
+.url{
+    line-height: 24px;
+    color: #25252c;
+    font: 16px "Arial";
+}
+.connection-row{
+    display: flex; 
+    justify-content: space-between;
+}
+.connection-column1{
+    margin: 30px 14px 30px 0;
+    width: 466px;
+}
+.map{
+     position: relative;
+     display: inline-block;
+     max-width: 460px;
+     bottom: -5px;
+ }
+ iframe{
+    width: 460px;
+    height: 295px;
+    margin: 30px 10px 30px 0;
+    border: none;
+    top: -100px;
+ }
+.connection-column2{
+    margin: 30px 0 30px 14px;
+    vertical-align: top;
+    width: 50%px;
+    font-size: 14px;
+    text-align: left;
+}
+input {
+    width: 217px;
+    height: 41px;
+    margin: 5px;
+    border: 1px solid #c4c4d3;
+    border-radius: 3px;
+}
+.connection-column2 p{
+    margin: 0;
+}
+ #text1, #text2{
+    width: 220px;
+    height: 41px;
+    margin: 2px;
+    border: 1px solid #c4c4d3;
+    border-radius: 3px;
+ }
+ #text3{
+    width: 450px;
+    height: 41px;
+    margin: 2px;
+    border: 1px solid #c4c4d3;
+    border-radius: 3px;
+ }
+ #text4{
+    width: 450px;
+    max-width: 450px;
+    height: 102px;
+    max-height: 150px;
+    margin: 23px 3px;
+    border: 1px solid #c4c4d3;
+    border-radius: 3px;
+ }
+ #text1, #text2, #text3, #text4{
+    font: italic 13px "Arial";
+    line-height: 21px;
+    color: #9999a6;
+    padding-left: 5px;
+ }
+ .button-con a{
+    display: inline-block;
+    width: 110px;
+    height: 20px;
+    font:bold 14px "Arial";
+    line-height: 24px;
+    text-align: center;
+    padding: 12px 35px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #fd8300;
+    border-radius: 25px;
+    font: bold 16px/1.5em "Arial";
+ }
+.check{
+    display: none;
+}
+label{
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+.check+label{
+    position: relative;
+    padding-left: 55px;
+    padding-top: 3px;
+}
+.check+label:before{
+    content: "";
+    position: absolute;
+    left: 31px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.check:checked+label::before{
+    border-color: black;
+}
+.check:checked+label::after{
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 3px;
+    height: 6px;
+    border: 1px solid transparent; 
+    border-bottom-color: black;
+    border-right-color: black;
+    transform: rotate(45deg);
+}
+
+
+
