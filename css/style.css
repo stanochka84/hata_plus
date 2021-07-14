@@ -142,12 +142,12 @@ a.in:hover{
 .skype::before{
     position: absolute;
     left: -28px;
-    bottom: -3px;
+    bottom: -5px;
 }
 .url::before{
     position: absolute;
     left: -28px;
-    bottom: 0px;
+    bottom: -6px;
 }
 .phone::before{
     content: url(../img/phone.png); 
@@ -184,9 +184,9 @@ a.in:hover{
     color: #25252c;;
     font: 16px/1.5em "Arial";
 }
-.contact-info a{
+/* .contact-info a{
     display: block;    
-}
+} */
 header{
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
@@ -524,16 +524,16 @@ input {
     margin: 0;
 }
  #text1, #text2{
-    width: 220px;
+    width: 215px;
     height: 41px;
-    margin: 2px;
+    margin: 5px;
     border: 1px solid #c4c4d3;
     border-radius: 3px;
  }
  #text3{
     width: 450px;
     height: 41px;
-    margin: 2px;
+    margin: -4px 4px;
     border: 1px solid #c4c4d3;
     border-radius: 3px;
  }
@@ -565,45 +565,55 @@ input {
     background-color: #fd8300;
     border-radius: 25px;
     font: bold 16px/1.5em "Arial";
+    transition: all .5s ease;
  }
+ .button-connection:hover{
+    color: black;
+    border: 2px solid #fd8300;
+    background-color: #fff;
+}
 .check{
     display: none;
 }
 label{
     font-size: 13px;
     line-height: 21px;
-    color: #666666;
+    color: #666;
     font-family: "Arial";
 }
 .check+label{
     position: relative;
     padding-left: 55px;
-    padding-top: 3px;
+    padding-top: 13px;
 }
 .check+label:before{
     content: "";
     position: absolute;
-    left: 31px;
-    top: 4px;
+    left: 21px;
+    top: 17px;
     width: 10px;
     height: 10px;
-    border: 1px solid black;
+    border: 1px solid #666;
     border-radius: 2px;
 }
 .check:checked+label::before{
-    border-color: black;
+    border-color: #666;
 }
 .check:checked+label::after{
     content: "";
     position: absolute;
-    left: 4px;
-    top: 4px;
+    left: 24px;
+    top: 16px;
     width: 3px;
     height: 6px;
-    border: 1px solid transparent; 
+    border: 2px solid transparent; 
     border-bottom-color: black;
     border-right-color: black;
     transform: rotate(45deg);
+}
+.letter{
+    display: flex;
+    justify-content: start;
 }
 
 
