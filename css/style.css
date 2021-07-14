@@ -539,9 +539,10 @@ input {
  }
  #text4{
     width: 450px;
-    max-width: 450px;
     height: 102px;
     max-height: 150px;
+    min-height: 80px;
+    resize: vertical;
     margin: 23px 3px;
     border: 1px solid #c4c4d3;
     border-radius: 3px;
@@ -592,8 +593,8 @@ label{
     position: absolute;
     left: 21px;
     top: 15px;
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     border: 1px solid #666;
     border-radius: 2px;
 }
@@ -603,7 +604,7 @@ label{
 .check:checked+label::after{
     content: "";
     position: absolute;
-    left: 24px;
+    left: 25px;
     top: 15px;
     width: 3px;
     height: 6px;
